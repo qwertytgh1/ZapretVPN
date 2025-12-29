@@ -106,7 +106,7 @@ def notify():
         except:
             pass
 
-return jsonify({
+        return jsonify({
             "status": "success",
             "received": True,
             "id": len(notifications),
@@ -162,3 +162,4 @@ def view_html():
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=False, threaded=True)
+
